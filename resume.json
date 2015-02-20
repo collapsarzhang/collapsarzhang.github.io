@@ -1,0 +1,93 @@
+{
+  "basics": {
+    "name": "Kevin R. Zhang",
+    "label": "Web Developer",
+    "picture": "",
+    "email": "kevin.zhangrui@gmail.com",
+    "phone": "(604) 771-8567",
+    "website": "http://kevrz.com",
+    "summary": "Kevin R. Zhang is graduated from University of British Columbia with Bachelor Degreee in Computer Engineer. He is try-and-true kind of person, thus he has experince on a lot of web development technologies such as AngularJS, Ionic, Laravel, and etc.",
+    "location": {
+      "address": "4014 18th Ave West",
+      "postalCode": "V6S 1B8",
+      "city": "Vancouver",
+      "countryCode": "CA",
+      "region": "BC"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "collapsarzhang",
+        "url": "https://github.com/collapsarzhang/"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "kevin-zhang",
+        "url": "ca.linkedin.com/pub/kevin-zhang/5b/2ab/821/en"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Strategic Communications Inc.",
+      "position": "PHP/Database Specialist",
+      "startDate": "2013-02-06",
+      "endDate": "2015-05-31",
+      "summary": "Maintain database records, maintain and development websites in suitable programming languages",
+      "highlights": [
+        "Sololy designed and developed project control panel for internal staff as well as company clients",
+        "Migrated various of legacy websites from PHP4 to PHP5",
+        "Detected security loopholes of legacy websites and removed them"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of British Columbia",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2009-09-01",
+      "endDate": "2013-05-31",
+      "gpa": "3.0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Intermidiate",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "AngularJS",
+        "Ionic",
+        "PHP",
+        "Laravel"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Mandarin",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Cantonese",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "eSports",
+      "keywords": [
+        "Dota2",
+        "Heroes of the storm",
+        "Hearthstone"
+      ]
+    }
+  ]
+}
