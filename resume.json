@@ -9,7 +9,7 @@
     "summary": "Kevin R. Zhang is graduated from University of British Columbia with Bachelor Degreee in Computer Engineer. He is try-and-true kind of person, thus he has experince on a lot of web development technologies such as AngularJS, Ionic, Laravel, and etc.",
     "location": {
       "address": "4014 18th Ave West",
-      "postalCode": "V6S 1B8",
+      "postalCode": "V6S1B8",
       "city": "Vancouver",
       "countryCode": "CA",
       "region": "BC"
@@ -29,18 +29,33 @@
   },
   "work": [
     {
+      "company": "Awesense Inc.",
+      "position": "Software Developer",
+      "website": "",
+      "startDate": "2015-06-01",
+      "endDate": "Present",
+      "summary": "Create properly built web and mobile applications that users love.",
+      "highlights": [
+        "Built highly interactive front-end components for both mobile and web platforms",
+        "Explored new technologies and techniques to improve the product and team",
+        "Planned how we bring our designs to life, and participated in daily scrums."
+      ]
+    },
+    {
       "company": "Strategic Communications Inc.",
       "position": "PHP/Database Specialist",
+      "website": "",
       "startDate": "2013-02-06",
       "endDate": "2015-05-31",
-      "summary": "Maintain database records, maintain and development websites in suitable programming languages",
+      "summary": "Maintain database records and legacy websites, design and develop functional websites with great user experience.",
       "highlights": [
-        "Sololy designed and developed project control panel for internal staff as well as company clients",
-        "Migrated various of legacy websites from PHP4 to PHP5",
-        "Detected security loopholes of legacy websites and removed them"
+        "Design and develop project control panel for automagical calling system, that is widely used by clients and internal staff",
+        "Migrated multiple legacy websites from PHP4 to PHP5",
+        "Detected security loopholes in legacy websites and removed them"
       ]
     }
   ],
+  "volunteer": [],
   "education": [
     {
       "institution": "University of British Columbia",
@@ -48,9 +63,12 @@
       "studyType": "Bachelor",
       "startDate": "2009-09-01",
       "endDate": "2013-05-31",
-      "gpa": "3.0"
+      "gpa": "3.0",
+      "courses": []
     }
   ],
+  "awards": [],
+  "publications": [],
   "skills": [
     {
       "name": "Web Development",
@@ -62,7 +80,9 @@
         "AngularJS",
         "Ionic",
         "PHP",
-        "Laravel"
+        "Laravel",
+        "React",
+        "Vue.js"
       ]
     }
   ],
@@ -89,5 +109,6 @@
         "Hearthstone"
       ]
     }
-  ]
+  ],
+  "references": []
 }
