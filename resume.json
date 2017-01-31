@@ -29,11 +29,24 @@
   },
   "work": [
     {
+      "company": "Istuary Innovation Labs Inc.",
+      "position": "Software Developer",
+      "website": "",
+      "startDate": "2016-05-09",
+      "endDate": "Present",
+      "summary": "Create properly built web and mobile applications that users love.",
+      "highlights": [
+        "Built highly interactive front-end components for both mobile and web platforms",
+        "Explored new technologies and techniques to improve the product and team",
+        "Planned how we bring our designs to life, and participated in daily scrums."
+      ]
+    },
+    {
       "company": "Awesense Inc.",
       "position": "Software Developer",
       "website": "",
       "startDate": "2015-06-01",
-      "endDate": "Present",
+      "endDate": "2016-05-06",
       "summary": "Create properly built web and mobile applications that users love.",
       "highlights": [
         "Built highly interactive front-end components for both mobile and web platforms",
