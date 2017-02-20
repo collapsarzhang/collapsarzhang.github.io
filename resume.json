@@ -30,15 +30,15 @@
   "work": [
     {
       "company": "Istuary Innovation Labs Inc.",
-      "position": "Software Developer",
+      "position": "Front End Engineer",
       "website": "",
       "startDate": "2016-05-09",
       "endDate": "Present",
-      "summary": "Create properly built web and mobile applications that users love.",
+      "summary": "Design and craft front end applications with various of modern js frameworks",
       "highlights": [
-        "Built highly interactive front-end components for both mobile and web platforms",
-        "Explored new technologies and techniques to improve the product and team",
-        "Planned how we bring our designs to life, and participated in daily scrums."
+        "Designed and implemented the infrastructure(JavaScript) of the front-end project",
+        "Introduced cutting edge front-end concepts and tools to the team",
+        "Worked with graphic designer to bring best user experience to the product"
       ]
     },
     {
@@ -85,7 +85,7 @@
   "skills": [
     {
       "name": "Web Development",
-      "level": "Intermidiate",
+      "level": "",
       "keywords": [
         "HTML",
         "CSS",
@@ -95,7 +95,12 @@
         "PHP",
         "Laravel",
         "React",
-        "Vue.js"
+        "Vue.js",
+        "SCSS",
+        "Angular2",
+        "Gulp",
+        "Webpack",
+        "Redux"
       ]
     }
   ],
@@ -117,7 +122,7 @@
     {
       "name": "eSports",
       "keywords": [
-        "Dota2",
+        "Gwent",
         "Heroes of the storm",
         "Hearthstone"
       ]
