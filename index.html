@@ -1,17 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-
-	<title>Kevin R. Zhang</title>
-	<link href='//fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-
-
-	<style>
-	body, html {
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Kevin R. Zhang</title>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <style>body, html {
   padding-top:2.5em;
   margin:0;
   background-color:#fafafa;
@@ -42,7 +37,7 @@ header {
   width:100%;
   vertical-align: middle;
   text-align: center;
-
+ 
 }
 
 .header-content {
@@ -52,14 +47,14 @@ header {
 .pic {
   margin: 0 auto;
   margin-top:-2.5em;
-
+  
   border-radius:10em;
   height:4em;
   width:4em;
-
+  
   border: 2px solid #e0e0e0;
   transition : all 0.5s linear;
-
+  
 }
 
 @-webkit-keyframes wiggle {
@@ -80,9 +75,9 @@ header {
 .pic:hover {
   /*Webkit fix*/
   -webkit-transform: translateZ(0);
-
+  
   cursor:pointer;
-
+  
   -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
@@ -94,9 +89,9 @@ header {
 header p {
   text-align:center;
   font-family: "Merriweather";
-
+  
   margin:0;
-
+  
   color: #212121;
 }
 
@@ -117,12 +112,12 @@ header p {
 .paper {
   margin: 0 auto;
   margin-bottom:1em;
-
+  
   background-color:white;
   width:60%;
-
+  
   padding:0.5em 0 0.5em 0;
-
+  
   border-top: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
@@ -145,9 +140,9 @@ header p {
 .content {
   display:table;
   width:100%;
-
+  
   padding-top:1.5em;
-
+  
   /*border-top: 1px solid #eeeeee;*/
 }
 
@@ -171,11 +166,11 @@ body > div > article > div > section:last-child {
   font-variant:small-caps;
   font-weight:300;
   letter-spacing: 1px;
-
+  
   color: #212121;
-
+  
   font-size:0.975em;
-
+  
   text-align:center;
   vertical-align:middle;
 
@@ -186,7 +181,7 @@ body > div > article > div > section:last-child {
 .content-cat p {
   font-size:0.55em;
   font-weight:600;
-
+  
   margin-bottom:0;
 }
 
@@ -203,7 +198,7 @@ body > div > article > div > section:last-child {
   padding:0;
   margin:0;
   margin-top:0.15em;
-
+  
   width:85%;
   margin-left:1.5em;
 }
@@ -215,16 +210,16 @@ body > div > article > div > section:last-child {
 .content-text ul li {
   font-family: "Open Sans";
   font-size:0.7em;
-
+  
   display:inline-block;
-
+  
 }
 
 .content-text ul li:first-child {
   width:35%;
-
+  
   color: #424242;
-
+  
   font-weight:600;
 }
 
@@ -240,9 +235,9 @@ body > div > article > div > section:last-child {
 .work-listing p {
   font-family: "Open Sans";
   font-size:0.7em;
-
+  
   color: #424242;
-
+  
   margin-left:2em;
   margin-top:0.45em;
   margin-bottom: 0.45em;
@@ -256,19 +251,19 @@ div.content-text.work-listing.education-listing > p:nth-child(2) {
   font-family: "Open Sans";
   font-size:0.7em;
   font-weight:400;
-
+  
   color: #424242;
-
+  
   margin-left:3.25em;
   padding-left:0.5em;
-
+  
   border-left:1px solid #e0e0e0;
-
+  
 }
 
 .education-listing > .heading {
   font-weight:600;
-
+  
   margin-top:0.75em;
   margin-left:2em;
 }
@@ -308,11 +303,8 @@ div.content-text.skills-listing > p > {
   color:#212121;
 }
 
-
-	</style>
-
-	<style media="print">
-
+</style>
+  <style media="print">
 body, html {
   background-color: white;
   padding-top: 1.5em;
@@ -338,11 +330,11 @@ header p {
 }
 
 .profiles {
-  /*display:none;*/
+  display:none;
 }
 
 .content {
-  page-break-inside:avoid;
+  page-break-inside:avoid; 
   page-break-after:auto;
 }
 
@@ -429,310 +421,213 @@ div.content-text.skills-listing > ul > li:first-child {
 
 .big-text {
   padding-top: 0;
-}
-	</style>
-
-	</head>
-	<body>
-
-	<span class="note">Check out new print view! (<strong>Press Ctrl + P</strong>) (Not available in Live-Editor!)</span>
-
-		<div class="resume-wrapper">
-		  <article class="paper">
-			    <header>
-			      <div class="header-content">
-			        <div class="header-text">
-			          <p>
-			            Kevin R. Zhang
-			          </p>
-			          <p class="subtitle">Web Developer</p>
-			        </div>
-			      </div>
-			    </header>
-			    <div class="content-wrapper">
-
-			      <!-- CONTACT -->
-			      <section class="content">
-			        <div class="row">
-			          <div class="content-cat">
-			           Contact
-			          </div>
-			          <div class="content-text">
-				            <ul>
-				              <li>Website</li>
-				              <li>http://kevrz.com</li>
-				            </ul>
-
-				            <ul>
-				              <li>Email</li>
-				              <li><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="375c52415e59194d5f56595045425e77505a565e5b1954585a">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></li>
-				            </ul>
-
-<ul>
-				              <li>Phone</li>
-				              <li>(604) 771-8567</li>
-				            </ul>
-			          </div>
-			        </div>
-			      </section>
-
-			      <!-- LOCATION -->
-					      <section class="content">
-					        <div class="row">
-					          <div class="content-cat">
-					           Location
-					          </div>
-					          <div class="content-text">
-
-						            <ul>
-						              <li>Address</li>
-						              <li>4014 18th Ave West</li>
-						            </ul>
-
-							            <ul>
-							              <li>Postal Code & City</li>
-							              <li>V6S1B8 Vancouver</li>
-							            </ul>
-
-						            <ul>
-						              <li>Region</li>
-						              <li>BC</li>
-						            </ul>
-
-					          </div>
-					        </div>
-					      </section>
-
-
-
-
-			      <!-- PROFILES -->
-				      <section class="content profiles">
-				        <div class="row">
-				          <div class="content-cat">
-				           Summary
-				          </div>
-				          <div class="content-text work-listing education-listing">
-				            <p>
-											A passionate programmer, who believes in perfectionism and minimalism.
-										</p>
-				          </div>
-				        </div>
-				      </section>
-
-							<!-- PROFILES -->
-					      <section class="content profiles">
-					        <div class="row">
-					          <div class="content-cat">
-					           Profile
-					          </div>
-					          <div class="content-text work-listing education-listing">
-					            <p>
-												- Web Developer with over 3 years of professional experience
-											</p>
-											<p>
-												- Designed and impletemented front-end conponents in AngularJS
-											</p>
-											<p>
-												- Wrote comprehensive test cases to enure better code qualities
-											</p>
-											<p>
-												- Experience with test driven development
-											</p>
-											<p>
-												- Experience with software migration
-											</p>
-											<p>
-												- Team player and quick learner
-											</p>
-					          </div>
-					        </div>
-					      </section>
-
-							<section class="content">
-								<div class="row">
-									<div class="content-cat">
-										Skills
-									</div>
-									<div class="content-text skills-listing">
-											<p>
-											<span class="name">
-												<strong>
-												Front-End Development:
-												</strong>
-											</span>
-													HTML, CSS, SCSS, Javascript, jQuery, AngularJS, Ionic, React, Vue.js, Redis, Memcached, Karma, Jasmine, Protractor
-											</p>
-								
-											<p>
-											<span class="name">
-												<strong>
-												Back-End Development:
-												</strong>
-											</span>
-													python, PHP, Laravel, Flask, Rails, Express.js, REST API
-											</p>
-
-											<p>
-											<span class="name">
-												<strong>
-												Database:
-												</strong>
-											</span>
-													MySQL, MangoDB, Firebase, SQLite, PostgreSQL, SQLAlchemy
-											</p>
-								
-											<p>
-											<span class="name">
-												<strong>
-												Other Tools:
-												</strong>
-											</span>
-													GIT, SVN, Shell Script, Gulp, Grunt, Webpack, Browserify, NPM
-											</p>
-									</div>
-								</div>
-							</section>
-
-								<section class="content">
-			        <div class="row">
-			          <div class="content-cat big-text">
-											Work	Experience
-
-			            		<p>2015-06-01 till Present</p>
-											<p>Vancouver, BC</p>
-
-			          </div>
-			          <div class="content-text work-listing education-listing">
-					            <p style="margin-top:2.4em;">
-					            		<strong>Software Developer</strong> at <strong>Awesense Inc.:</strong>
-					            </p>
-
-											<p>Create properly built web and mobile applications that users love.</p>
-
-												<p class="highlight">Built highly interactive front-end components for both mobile and web platforms in TDD with comprehensive Karma tests</p>
-												<p class="highlight">Wrote RESTful APIs backed with comprehensive python tests</p>
-												<p class="highlight">Migrated front-end components to ECMA6</p>
-												<p class="highlight">Explored new technologies and techniques to improve the product and team</p>
-												<p class="highlight">Designed and documented new front-end components</p>
-												<p class="highlight">Planned how to bring designs to life, and participated in daily scrums.</p>
-
-
-			          </div>
-			        </div>
-			      </section>
-								<section class="content work-content">
-			        <div class="row">
-			          <div class="content-cat big-text">
-
-			            		<p>2013-02-06 till 2015-05-31</p>
-											<p>Vancouver, BC</p>
-
-			          </div>
-			          <div class="content-text work-listing education-listing">
-					            <p>
-					            		<strong>PHP/Database Specialist</strong> at <strong>Strategic Communications Inc.:</strong>
-					            </p>
-
-											<p>Maintain database records and legacy websites, design and develop functional websites with great user experience.</p>
-
-												<p class="highlight">Design and develop project control panel for automagical calling system, that is widely used by clients and internal staff</p>
-												<p class="highlight">Migrated multiple legacy websites from PHP4 to PHP5</p>
-												<p class="highlight">Detected security loopholes in legacy websites and removed them</p>
-
-
-			          </div>
-			        </div>
-			      </section>
-
-
-
-								<section class="content">
-				        <div class="row">
-				          <div class="content-cat big-text">
-
-				            	Education
-
-				            		<p>2009-09-01 till 2013-05-31</p>
-
-				          </div>
-				          <div class="content-text work-listing education-listing">
-						            <p class="heading" style="margin-top:2.35em;">University of British Columbia</p>
-
-				            		<p class="highlight">
-													Bachelor:
-				            		<i>Computer Engineering (3.0)</i>
-				            		</p>
-
-				          </div>
-				        </div>
-				      </section>
-
-						<!-- LANGUAGE -->
-						<section class="content">
-							<div class="row">
-								<div class="content-cat">
-								 Languages
-								</div>
-								<div class="content-text">
-
-										<ul>
-
-												<li>English</li>
-
-											<li>Fluent</li>
-
-										</ul>
-										<ul>
-
-												<li>Mandarin</li>
-
-											<li>Native Speaker</li>
-
-										</ul>
-										<ul>
-
-												<li>Cantonese</li>
-
-											<li>Native Speaker</li>
-
-										</ul>
-
-								</div>
-							</div>
-						</section>
-
-			      <section class="content">
-			        <div class="row">
-			          <div class="content-cat">
-			            Interests
-			          </div>
-			          <div class="content-text skills-listing">
-			            	<p>
-			            	<span class="name">
-											<strong>
-												eSports:
-											</strong>
-			            	</span>
-												Dota2, Heroes of the storm, Hearthstone
-			            	</p>
-			            	<p>
-			            	<span class="name">
-											<strong>
-												others:
-											</strong>
-			            	</span>
-												new tech gadgets
-			            	</p>
-			          </div>
-			        </div>
-			      </section>
-
-		    </div>
-
-		  </article>
-
-		</div>
-	</body>
+}</style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <article class="paper">
+        <header>
+          <div class="header-content">
+            <div class="header-text">
+              <p>
+                Kevin R. Zhang
+              </p>
+              <p class="subtitle">Web Developer</p>
+            </div>
+          </div>
+        </header>
+        <div class="content-wrapper">
+          <!-- CONTACT -->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Contact
+              </div>
+              <div class="content-text">
+                  <ul>
+                    <li>Website</li>
+                    <li>http://kevrz.com</li>
+                  </ul>
+                  <ul>
+                    <li>Email</li>
+                    <li>kevin.zhangrui@gmail.com</li>
+                  </ul>
+                  <ul>
+                    <li>Phone</li>
+                    <li>(604) 771-8567</li>
+                  </ul>
+              </div>
+            </div>
+          </section>
+          <!-- LOCATION -->
+              <section class="content">
+                <div class="row">
+                  <div class="content-cat">
+                    Location
+                  </div>
+                  <div class="content-text">
+                      <ul>
+                        <li>Address</li>
+                        <li>4014 18th Ave West</li>
+                      </ul>
+                        <ul>
+                          <li>Postal Code & City</li>
+                          <li>V6S1B8 Vancouver</li>
+                        </ul>
+                      <ul>
+                        <li>Region</li>
+                        <li>BC</li>
+                      </ul>
+                  </div>
+                </div>
+              </section>
+        <!-- LANGUAGE -->
+            <section class="content">
+              <div class="row">
+                <div class="content-cat">
+                  Languages
+                </div>
+                <div class="content-text">
+                    <ul>
+                        <li>English</li>
+                        <li>Fluent</li>
+                    </ul>
+                    <ul>
+                        <li>Mandarin</li>
+                        <li>Native Speaker</li>
+                    </ul>
+                    <ul>
+                        <li>Cantonese</li>
+                        <li>Native Speaker</li>
+                    </ul>
+                </div>
+              </div>
+            </section>
+            <!-- PROFILES -->
+              <section class="content profiles">
+                <div class="row">
+                  <div class="content-cat">
+                    Profiles
+                  </div>
+                  <div class="content-text profiles-listing">
+                    <ul>
+                          <li>
+                            <a href="https://github.com/collapsarzhang/" target="_blank">
+                              Github
+                            </a>
+                          </li>
+                          <li>
+                            <a href="ca.linkedin.com/pub/kevin-zhang/5b/2ab/821/en" target="_blank">
+                              LinkedIn
+                            </a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Work  Experience
+                          <p>2016-05-09 till Present</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p style="margin-top:2.4em;">
+                            <strong>Front End Engineer</strong>
+                            at <strong>Istuary Innovation Labs Inc.:</strong>
+                        </p>
+                        <p>Design and craft front end applications with various of modern js frameworks</p>
+                          <p class="highlight">Designed and implemented the infrastructure(JavaScript) of the front-end project</p>
+                          <p class="highlight">Introduced cutting edge front-end concepts and tools to the team</p>
+                          <p class="highlight">Worked with graphic designer to bring best user experience to the product</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2015-06-01 till 2016-05-06</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Software Developer</strong>
+                            at <strong>Awesense Inc.:</strong>
+                        </p>
+                        <p>Create properly built web and mobile applications that users love.</p>
+                          <p class="highlight">Built highly interactive front-end components for both mobile and web platforms</p>
+                          <p class="highlight">Explored new technologies and techniques to improve the product and team</p>
+                          <p class="highlight">Planned how we bring our designs to life, and participated in daily scrums.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2013-02-06 till 2015-05-31</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>PHP/Database Specialist</strong>
+                            at <strong>Strategic Communications Inc.:</strong>
+                        </p>
+                        <p>Maintain database records and legacy websites, design and develop functional websites with great user experience.</p>
+                          <p class="highlight">Design and develop project control panel for automagical calling system, that is widely used by clients and internal staff</p>
+                          <p class="highlight">Migrated multiple legacy websites from PHP4 to PHP5</p>
+                          <p class="highlight">Detected security loopholes in legacy websites and removed them</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Education
+                          <p>2009-09-01 till 2013-05-31</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading" style="margin-top:2.35em;">University of British Columbia</p>
+                        <p class="highlight">
+                          Bachelor:
+                          <i>Computer Engineering (3.0)</i>
+                        </p>
+                    </div>
+                  </div>
+                </section>
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Skills
+              </div>
+              <div class="content-text skills-listing">
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Web Development:
+                        </strong>
+                    </span>
+                      HTML, CSS, Javascript, AngularJS, Ionic, PHP, Laravel, React, Vue.js, SCSS, Angular2, Gulp, Webpack, Redux
+                  </p>
+              </div>
+            </div>
+          </section>
+            <section class="content">
+              <div class="row">
+                <div class="content-cat">
+                  Interests
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                      <span class="name">
+                          <strong>
+                            eSports:
+                          </strong>
+                      </span>
+                        Gwent, Heroes of the storm, Hearthstone
+                    </p>
+                </div>
+              </div>
+            </section>
+        </div>
+    </article>
+  </div>
+</body>
 </html>
