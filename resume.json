@@ -6,7 +6,7 @@
     "email": "kevin.zhangrui@gmail.com",
     "phone": "(604) 771-8567",
     "website": "http://kevrz.com",
-    "summary": "Kevin R. Zhang is graduated from University of British Columbia with Bachelor Degreee in Computer Engineer. He is try-and-true kind of person, thus he has experince on a lot of web development technologies such as AngularJS, Ionic, Laravel, and etc.",
+    "summary": "Experienced Frond End Engineer with demonstrated history in software development. Skilled in designing user friendly web applications and implementing with cutting edge front end frameworks and tools. Strong engineering professional with a Bachelor of Science (B.Sc.) focused in Computer Engineering from University of British Columnbia.",
     "location": {
       "address": "4014 18th Ave West",
       "postalCode": "V6S1B8",
@@ -33,7 +33,7 @@
       "position": "Front End Engineer",
       "website": "",
       "startDate": "2016-05-09",
-      "endDate": "Present",
+      "endDate": "",
       "summary": "Design and craft front end applications with various of modern js frameworks",
       "highlights": [
         "Designed and implemented the infrastructure(JavaScript) of the front-end project",
@@ -51,7 +51,7 @@
       "highlights": [
         "Built highly interactive front-end components for both mobile and web platforms",
         "Explored new technologies and techniques to improve the product and team",
-        "Planned how we bring our designs to life, and participated in daily scrums."
+        "Planned how we bring our designs to life, and participated in daily scrums"
       ]
     },
     {
@@ -92,8 +92,8 @@
         "Javascript",
         "AngularJS",
         "Ionic",
-        "PHP",
-        "Laravel",
+        "",
+        "",
         "React",
         "Vue.js",
         "SCSS",
@@ -102,6 +102,23 @@
         "Webpack",
         "Redux"
       ]
+    },
+    {
+      "name": "Backend Development",
+      "level": "",
+      "keywords": [
+        "PHP",
+        "Node.js",
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Python"
+      ]
+    },
+    {
+      "name": "",
+      "level": "",
+      "keywords": []
     }
   ],
   "languages": [
