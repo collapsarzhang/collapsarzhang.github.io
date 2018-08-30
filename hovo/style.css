@@ -9515,7 +9515,12 @@ ul.tab-nav li a i {
 
 .clients-grid.grid-4 li { width: 25%; }
 
-.clients-grid.grid-6 li { width: 16.66%; }
+.clients-grid.grid-6 li {
+	width: 16.66%;
+	height: 150px;
+    display: flex;
+    align-items: center;
+}
 
 .clients-grid li a { opacity: 0.6; }
 
