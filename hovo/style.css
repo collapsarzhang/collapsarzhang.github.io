@@ -9522,7 +9522,7 @@ ul.tab-nav li a i {
     align-items: center;
 }
 
-.clients-grid li a { opacity: 0.6; }
+/* .clients-grid li a { opacity: 0.6; } */
 
 body:not(.device-touch) .clients-grid li a {
 	-webkit-transition: all .5s ease;
