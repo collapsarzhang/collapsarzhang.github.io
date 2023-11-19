@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ChatGPT AI Board Game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/view-ui-plus/dist/styles/viewuiplus.css">
+        <script type="text/javascript" src="https://unpkg.com/vue@next"></script>
+        <script type="text/javascript" src="https://unpkg.com/view-ui-plus"></script>
+        <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="layout">
+                <div class="left">
+                    <i-button @click="addPlayer">Add Player</i-button>
+                    <div class="player-card" v-for="playerItem in playerArray">
+                        <div>Name</div>
+                        <div>
+                            <i-input v-model="playerItem.name" placeholder="Enter Name" style="width: 300px"/>
+                        </div>
+                        <div>Pre Prompt:</div>
+                        <div>
+                            <i-input v-model="playerItem.prePrompt" placeholder="Enter Pre Prompt" type="textarea" style="width: 300px"/>
+                        </div>
+                        <div>Post Prompt:</div>
+                        <div>
+                            <i-input v-model="playerItem.postPrompt" placeholder="Enter Post Prompt" type="textarea" style="width: 300px"/>
+                        </div>
+                        <Collapse simple>
+                            <Panel name="1">
+                                Combined Prompt
+                                <template #content>
+                                    Your name is
+                                    {{playerItem.name}}<br/>
+                                    {{playerItem.prePrompt}}<br/>
+                                    {{sharedPrompt}}<br/>
+                                    {{playerItem.postPrompt}}
+                                </template>
+                            </Panel>
+                        </Collapse>
+                    </div>
+                </div>
+                <div class="right">
+                    <div id="shared-prompt">
+                        <i-input v-model="sharedPrompt" type="textarea" :rows="4" placeholder="Enter Shared Prompt"/>
+                    </div>
+                    <i-button @click="startTheGame">Start the Conversation</i-button>
+                    <!-- <i-button @click="stopTheGame">Stop the Conversation</i-button> -->
+                    <div id="message-box">
+                        <div v-for="message in messageArray">
+                            <div>{{message}}</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            const {createApp, ref} = Vue
+
+            function randomIntFromInterval(min, max) { // min and max included
+                return Math.floor(Math.random() * (max - min + 1) + min)
+            }
+
+            app = createApp({
+                setup() {
+                    const messageArray = ref([]);
+                    const playerArray = ref([{
+                            id: crypto.randomUUID(),
+                            name: "",
+                            prePrompt: "you are a player in the following game",
+                            postPrompt: "let the game begin",
+                            messagePointer: 0
+                        }]);
+
+                    return {messageArray, playerArray, sharedPrompt: ref("this is a word guessing game. each player will come up with a word and keep it in mind. and then try to guess the other player's word."), stop: ref(false)}
+                },
+                methods: {
+                    addPlayer: function () {
+                        this.playerArray.push({
+                            id: crypto.randomUUID(),
+                            name: "",
+                            prePrompt: "you are a player in the following game",
+                            postPrompt: "let the game begin",
+                            messagePointer: 0
+                        });
+                    },
+                    startTheGame: async function () {
+                        for (let index = 0; index < this.playerArray.length; index++) {
+                            const playerItem = this.playerArray[index];
+                            const {data: responseObject} = await axios.post('http://localhost:3000/conversation', {
+                                message: playerItem.messagePointer === 0 ? "Your name is " + playerItem.name + " and you dont need to include your name in the response" + "\r\n" + playerItem.prePrompt + "\r\n" + this.sharedPrompt + "\r\n" + playerItem.postPrompt + "\r\n" + this.messageArray.slice(playerItem.messagePointer).join("\r\n") : this.messageArray.slice(playerItem.messagePointer).join("\r\n"),
+                                ... playerItem.conversationId ? {
+                                    conversationId: playerItem.conversationId
+                                } : {}
+                            });
+                            const {response, conversationId} = responseObject;
+                            this.messageArray.push(playerItem.name + ": " + response);
+                            playerItem.conversationId = conversationId;
+                            playerItem.messagePointer = this.messageArray.length;
+                        }
+                    },
+                    stopTheGame: function () {
+                        this.stop = true;
+                    }
+                }
+            })
+            app.use(ViewUIPlus);
+            app.mount("#app");
+        </script>
+    </body>
+</html>
