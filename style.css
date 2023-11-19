@@ -1,0 +1,38 @@
+body {
+    background: #f5f7f9;
+}
+
+.layout {
+    display: flex;
+    padding: 50px;
+}
+
+.left {
+    width: 40%;
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+.player-card {
+    margin-top: 10px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.right {
+    flex: 1;
+}
+
+#shared-prompt {
+    margin-bottom: 10px;
+}
+
+#message-box {
+    margin-top: 10px;
+    min-height: 500px;
+    border: 1px solid gray;
+}
+
+.ivu-btn {
+    margin-right: 10px;
+}
