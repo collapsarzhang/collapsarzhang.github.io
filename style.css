@@ -28,6 +28,7 @@ body {
 }
 
 #message-box {
+    padding: 5px;
     margin-top: 10px;
     min-height: 500px;
     border: 1px solid gray;
