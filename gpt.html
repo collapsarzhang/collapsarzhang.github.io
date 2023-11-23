@@ -93,7 +93,7 @@
                     startTheGame: async function () {
                         for (let index = 0; index < this.playerArray.length; index++) {
                             const playerItem = this.playerArray[index];
-                            const {data: responseObject} = await axios.post('http://localhost:3000/conversation', {
+                            const {data: responseObject} = await axios.post('https://possible-basically-sculpin.ngrok-free.app/conversation', {
                                 message: playerItem.messagePointer === 0 ? "Your name is " + playerItem.name + " and you dont need to include your name in the response" + "\r\n" + playerItem.prePrompt + "\r\n" + this.sharedPrompt + "\r\n" + playerItem.postPrompt + "\r\n" + this.messageArray.slice(playerItem.messagePointer).join("\r\n") : this.messageArray.slice(playerItem.messagePointer).join("\r\n"),
                                 ... playerItem.conversationId ? {
                                     conversationId: playerItem.conversationId
